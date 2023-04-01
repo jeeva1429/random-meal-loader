@@ -21,7 +21,7 @@ This project is a web application that allows users to generate a random meal fr
 # How to Use
 ## To use the web application, follow these steps:
 
-- Visit the web application by clicking [here](https://jeeva1429.github.io/random-meal-loader/ca_3_fewd/)or opening the index.html file in a web browser.
+- Visit the web application by clicking [here](https://jeeva1429.github.io/random-meal-loader/ca_3_fewd/) or opening the index.html file in a web browser.
 - Click on the "Random Meal" button to generate a random meal.
 - Use the search bar or drop-down menus to search for meals in different categories and regions.
 - Click on a meal to see its details.
