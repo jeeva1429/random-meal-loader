@@ -129,7 +129,7 @@ const createResultElement = (food) => {
   return div;
 };
 
-const searchedMealsHeadingHandler = () => {
+const searchedMealsHeadingHandler = (value) => {
   searchedMealsHeading.textContent = ""
   searchedMealsHeading.textContent = `Showing the results for ${value}`
 }
@@ -148,7 +148,7 @@ const searchByName = async (value) => {
     // If meals are found, clear the search results div, create result elements for each meal, and append them to the div
     if (data.meals && data.meals.length > 0) {
       searchResultsDiv.innerHTML = "";
-      // searchedMealsHeadingHandler()
+      searchedMealsHeadingHandler(value)
       data.meals.forEach((food) => {
         const resultElement = createResultElement(food);
         searchResultsDiv.appendChild(resultElement);
@@ -161,7 +161,7 @@ const searchByName = async (value) => {
     }
   } catch (error) {
     // If an error occurs, alert the user
-    alert("There is no meal for for your input");
+    alert(error.message);
   }
 };
 
@@ -252,6 +252,7 @@ const searchByOptions = async (option, value) => {
     if (data.meals && data.meals.length > 0) {
 
       searchResultsDiv.innerHTML = "";
+      searchedMealsHeadingHandler(value)
       data.meals.forEach((food) => {
         const resultElement = createResultElement(food);
         searchResultsDiv.appendChild(resultElement);
