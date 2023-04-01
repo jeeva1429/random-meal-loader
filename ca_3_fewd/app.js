@@ -11,6 +11,7 @@ const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-button");
 const inputBox = document.querySelector("input");
 const searchedMealsHeading = document.getElementById('searched-results-value')
+
 const randomMealGenerator = () => {
   fetch(randomMealUrl)
     .then((res) => {
@@ -142,7 +143,7 @@ const searchByName = async (value) => {
     const res = await fetch(searchByNameUrl);
     // Throw an error if the response is not OK
     if (!res.ok) {
-      throw new Error("Network error!");
+      throw new Error("Network Error!");
     }
     const data = await res.json();
     // If meals are found, clear the search results div, create result elements for each meal, and append them to the div
@@ -155,13 +156,13 @@ const searchByName = async (value) => {
       });
       // Scroll the search results div into view smoothly
       searchResultsDiv.scrollIntoView({ behavior: "smooth" });
-    } else {
-      // If no meals are found, alert the user
-      alert("There is a typo error in your meal name");
+    } 
+    else {
+      alert('no meals found!, Check your meal spelling.')
     }
   } catch (error) {
     // If an error occurs, alert the user
-    alert(error.message);
+    console.log(error.message);
   }
 };
 

@@ -182,6 +182,9 @@ input[type="text"]:hover {
   font-weight: 600;
   width: 120px;
 }
+.searched-results-div{
+    margin-bottom: 5%;
+}
 .searched-results {
   display: flex;
   flex-wrap: wrap;
@@ -341,6 +344,6 @@ img {
     font-size: 18px;
     line-height: 32px;
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
   }
 }
