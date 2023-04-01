@@ -4,11 +4,11 @@ This project is a web application that allows users to generate a random meal fr
 # Functionality
 ## The web application has the following functionality:
 
-1.## Random Meal Generator: Users can click on the "Random Meal" button to generate a random meal from the database of meals. The meal will be displayed with its name and picture.
+1. **Random Meal Generator**: Users can click on the "Random Meal" button to generate a random meal from the database of meals. The meal will be displayed with its name and picture.
 
-2.## Meal Search: Users can search for meals in different categories and regions. They can search by typing in the name of the meal in the search bar or selecting a category or region from the drop-down menus.
+2. **Meal Search**: Users can search for meals in different categories and regions. They can search by typing in the name of the meal in the search bar or selecting a category or region from the drop-down menus.
 
-3.## Meal Details: Users can click on a meal to see its details, including a list of its ingredients and instructions on how to prepare it.
+3. **Meal Details**: Users can click on a meal to see its details, including a list of its ingredients and instructions on how to prepare it.
 
 # Technologies Used
 ## The web application is built using the following technologies:
