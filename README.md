@@ -25,5 +25,3 @@ This project is a web application that allows users to generate a random meal fr
 - Click on the "Random Meal" button to generate a random meal.
 - Use the search bar or drop-down menus to search for meals in different categories and regions.
 - Click on a meal to see its details.
-- Credits
-- This project was created by **jeeva parkkavan** as part of **Kalvium** using the MealDB API. Special thanks to the creators of the MealDB API for providing the data and resources necessary to build this project.
